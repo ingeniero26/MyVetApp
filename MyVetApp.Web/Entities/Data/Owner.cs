@@ -37,6 +37,9 @@ namespace MyVetApp.Web.Entities.Data
 
         public string FullNameWithDocument => $"{FirstName} {LastName} - {Document}";
 
+        public ICollection<Pet> Pets { get; set; }
+       
+
 
     }
 }
